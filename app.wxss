@@ -1,0 +1,30 @@
+/**app.wxss**/
+
+@import "/templates/search-template/search-template.wxss";
+@import "/templates/comment-template/comment-template.wxss";
+@import "/style/tools.wxss";
+page{
+  height:100%;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+  padding:0;
+  box-sizing: border-box;
+  background:#f2f2f5;
+  font-size: 12px;
+} 
+.error-icon{
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+.m-container {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}

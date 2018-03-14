@@ -1,0 +1,33 @@
+<scroll-view scroll-x style="width: 100%" class="table">
+    <block wx:for="{{tables}}" wx:for-item="table" wx:for-index="table_index">
+        <view class="tr bg-g" wx:if="{{table_index % 2 == 0}}">
+            <view class="td" wx:for="{{table}}" wx:item="item" bindtap="openModel" data-id="{{table_index}}">{{item}}</view>
+        </view>
+        <view class="tr" wx:else>
+            <view class="td" wx:for="{{table}}" wx:item="item" bindtap="openModel" data-id="{{table_index}}">{{item}}</view>
+        </view>
+    </block>
+</scroll-view>
+<view class="control-container" bindtap="openAddModel">
+    添加行
+</view>
+<button  class="btn" type="success" bindtap="submitModel" class="submit-btn">提交</button>
+<button  class="btn"  type="success" bindtap="clearModel" class="submit-btn">清空表格</button>
+
+<view wx:if="{{show}}" class="mask-form">
+    <view class="mask-content-container" wx:for="{{cols}}" wx:for-item="col" wx:for-index="col_index">
+        <text class="list-mask-title">{{titles[col_index]}}</text>
+        <input class="list-mask-input" type="text" value="{{col}}" data-id="{{col_index}}" bindblur="dataChange" />
+    </view>
+    <button class="btn btn-confirm" type="success" bindtap="editModel">确认</button>
+    <button class="btn btn-confirm" type="warn" bindtap="deleteModel">删除本行</button>    
+    <button class="btn btn-cancle" type="default" bindtap="closeModel">取消</button>
+</view>
+<view wx:if="{{create}}" class="mask-form">
+    <view class="mask-content-container" wx:for="{{cols}}" wx:for-item="col" wx:for-index="col_index">
+        <text class="list-mask-title">{{titles[col_index]}}</text>
+        <input class="list-mask-input" type="text" value="{{col}}" data-id="{{col_index}}" bindblur="dataChange" />
+    </view>
+    <button class="btn btn-confirm" type="success" bindtap="addModel">确认</button>
+    <button class="btn btn-cancle" type="default" bindtap="closeModel">取消</button>
+</view>

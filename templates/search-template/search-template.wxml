@@ -1,0 +1,6 @@
+<template name="search-template">
+     <view class="search-container">
+        <input type="text" confirm-type="search" placeholder-style="margin-left:60%;font-size:14px;;" class="search-input"data-type="{{searchType}}" bindblur="search"  placeholder="搜索文章" />
+      <image src="/images/search.png" mode="scaleToFill" class="search-image"></image>
+    </view>
+</template>

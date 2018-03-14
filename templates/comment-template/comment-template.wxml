@@ -1,0 +1,23 @@
+<template name="comment-template">
+    <view class="comment-container">
+        <view class="comment-info">
+            <text class="ml10">阅读</text>
+            <text class="read-num ml10">{{article.read_count}}</text>
+        </view>
+        <view class="comment-main-body" wx:for="{{comments}}" wx:for-item="comment" wx:key="comment">
+            <view class="comment-left">
+                <image src="{{imgUrl + comment.user[0].avatar}}" class="comment-avatar"></image>
+                <text class="comment-name">{{comment.user[0].nickname}}</text>
+            </view>
+            <view class="comment-right">
+                <text class="comment-main">{{comment.content}}</text>
+                <text class="comment-time">{{comment.created_at}}</text>
+            </view>
+        </view>
+        <view class="input-container1">
+            <image class="comment-icon" src="/images/message.png" mode="scaleToFill"></image>
+            <input type="text" class="comment-input" value="{{input}}" bindblur="getInput" />
+            <button bindtap="sendComment" class="send" data-pageId="{{id}}">发送</button>
+        </view>
+    </view>
+</template>

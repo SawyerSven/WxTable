@@ -1,0 +1,59 @@
+.arrow-image{
+  width: 42rpx;
+  height:42rpx;
+  margin-right: 20rpx;
+}
+.mt20{
+  margin-top:40rpx;
+}
+.mt10{
+  margin-top: 20rpx;
+}
+.ml20{
+  margin-left: 40rpx;
+}
+.mr20{
+  margin-right: 40rpx;
+}
+.ml10{
+  margin-left: 20rpx;
+}
+.mr10{
+  margin-right: 20rpx;
+}
+.white{
+  color:#fff;
+}
+.c555{
+  color: #555;
+}
+.cmain{
+  color:#01b6c7;
+}
+.bold{
+  font-weight: bold;
+}
+.bb{
+  border-bottom:1px solid #f2f2f5;
+}
+.bt{
+  border-bottom: 1px solid #eee;
+}
+.fs16{
+  font-size: 16px;
+}
+.fs12{
+  font-size: 12px;
+}
+.gray{
+  color:#969696;
+}
+.black{
+  color:#494949;
+}
+.m5{
+  margin: 10rpx;
+}
+.fs14{
+  font-size: 14px;
+}
