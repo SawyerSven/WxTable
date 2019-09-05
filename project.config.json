@@ -9,8 +9,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.8.1",
-	"appid": "wx3c19635c5e7418e8",
-	"projectname": "asd",
+	"appid": "",
+	"projectname": "table",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
 	"condition": {
